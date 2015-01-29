@@ -514,10 +514,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -526,10 +526,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -955,7 +955,7 @@ pre code {
   .col-md-3,
   .col-md-4,
   .col-md-5,
-  .col-md-6,
+  .col-md-6
   .col-md-7,
   .col-md-8,
   .col-md-9,
