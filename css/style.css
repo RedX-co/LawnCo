@@ -7,24 +7,19 @@
 @import url('animate.css');
 
 
-.col-lg-12 {
-	padding-left: 15px;
-	padding-right: 15px;
+.intro-header {
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 50px;
+	text-align: center;
+	color: #f8f8f8;
+	background: url(../img/home/grass.jpg) no-repeat center center;
+	background-size: cover;
 }
 
-#landing-header .landing-header-content {
-	background-color: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	bottom: 3px;
-	padding: 20px;
-}
-#landing-header .landing-header-content p {
-	color: white;
-}
-#landing-header .landing-img {
-	width: 100%;
-	border: 3px solid white;
+.intro-message {
 	position: relative;
+	padding-top: 20%;
+	padding-bottom: 20%;
 }
 
 body {
