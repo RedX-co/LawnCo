@@ -7,6 +7,25 @@
 @import url('animate.css');
 
 
+.col-lg-12 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#landing-header .landing-header-content {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 3px;
+	padding: 20px;
+}
+#landing-header .landing-header-content p {
+	color: white;
+}
+#landing-header .landing-img {
+	width: 100%;
+	border: 3px solid white;
+	position: relative;
+}
 
 body {
 	font-family:'Open Sans', Arial, sans-serif;
@@ -93,7 +112,7 @@ ul.social-network li a {
 }
 
 .info a {
-  color: #d0d0d0;
+  color: #000000;
   font-size: 12px;
 }
 
@@ -102,7 +121,7 @@ ul.social-network li a {
 }
 
 .info p {
-  color: #d0d0d0;
+  color: #000000;
   font-size: 12px;
   margin: 0;
 }
