@@ -1,0 +1,50 @@
+  <div class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="page-header">
+            <img src="img/slider/5.jpg" class="img-responsive"alt="" />
+            <h3>Commitment to Excellence</h3>
+
+            <p>Duis autem vel eum iriure dolor in hendrerit
+            in vulputate velit esse molestie consequat,
+            vel illum dolore eu feugiat nulla facilisis at
+            vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis
+            dolore te feugait nulla facilisi. Nam liber tempor
+            cum soluta nobis eleifend option congue nihil imperdiet
+            </p>
+
+
+          </div>
+              <div class="row">
+                <div class=".col-xs-6 .col-md-4">
+                  <ul>
+                  <li>Customised and Scalable Solutions</li>
+                  <li>Fully Licensed and Insured</li>
+                  <li>Flexible Payment Options</li>
+                  <li>Short and Long Term Contracts Available</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+        </div>
+            <div class="span5">
+              <ul>
+                <li>Subdivsion Landscape Management</li>
+              <li>Commercial/Industrial Landscape Management</li>
+              <li>Design and Construction Services</li>
+              <li>Ice and Snow Management</li>
+              <li>Seeding Services</li>
+              <li>Seasonal Color</li>
+              <li>Holiday and Landscape Lighting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
