@@ -1,7 +1,7 @@
 //App.js
 
 //Require the sweetcaptcha module and give it the credentials you were sent upon registration.
-var sweetcaptcha = new require('sweetcaptcha')(233744, bd225cfb082de77292b26f25a79720c4, e512482040f81765be5463b382c27170);
+var sweetcaptcha = new require('sweetcaptcha')(233744);
 // The page that your contact form is on should have a route like this
 app.get('/', function(req, res){
 
