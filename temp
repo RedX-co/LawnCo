@@ -67,7 +67,16 @@
 
   <br>
 
+<<<<<<< HEAD:temp
 
+=======
+  <div class="container-fluid">
+    <div class="row">
+
+
+    </div>
+  </div>
+>>>>>>> parent of 06838be... part working contact us:Contact.html
 
   <footer>
     <div class="inner-footer">
