@@ -1,8 +1,8 @@
 {
-  "name" : "Lawn Co.",
-  "description" : "Lawn Co. website.",
-  "homepage" : "lawnco.net",
-  "author" : "Jared Heikes <redx.co>",
-  "dependencies" : [],
-  "version" : "0.40.5"
+  "name": "LawnCo",
+  "description": "Lawn Co. website.",
+  "homepage": "lawnco.net",
+  "author": "Jared Heikes <redx.co>",
+  "dependencies": {},
+  "version": "0.40.5"
 }
