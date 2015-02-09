@@ -6,6 +6,16 @@
 @import url('overwrite.css');
 @import url('animate.css');
 
+.header {
+	color: #36A0FF;
+	font-size: 27px;
+	padding: 10px;
+}
+
+.bigicon {
+	font-size: 35px;
+	color: #36A0FF;
+}
 
 .intro-header {
 	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
