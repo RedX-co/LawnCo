@@ -3,6 +3,8 @@
   "description": "Lawn Co. website.",
   "homepage": "lawnco.net",
   "author": "Jared Heikes <redx.co>",
-  "dependencies": {},
+  "dependencies": {
+    "firebase": "^2.1.2"
+  },
   "version": "0.40.5"
 }
