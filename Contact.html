@@ -67,46 +67,61 @@
 
   <br>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="well well-sm">
-          <form class="form-horizontal" method="post">
-            <fieldset>
-              <legend class="text-center header">Contact us</legend>
-
-              <div class="form-group">
-                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                <div class="col-md-8">
-                  <input id="fname" ng-model="message.name" type="text" placeholder="Name" class="form-control">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                <div class="col-md-8">
-                  <input ng-model="message.email" type="text" placeholder="Email Address" class="form-control">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                <div class="col-md-8">
-                  <textarea class="form-control" ng-model="message.text" placeholder="How can we assist you?" rows="7"></textarea>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="col-md-12 text-center">
-                  <button type="submit" $save() >Submit/button>
-                </div>
-              </div>
-            </fieldset>
-          </form>
-        </div>
+  <div ng-app="contactA">
+    <div ng-controller="ContactCtrl">
+      <h1>Contact Us</h1>
+      <div class="form-group has-feedback" ng-class="{'has-success': isValid.email, 'has-error': !isValid.email}">
+        <input ng-disabled="contactSent" class="form-control" ng-model="contact.email" placeholder="Email" ng-keydown="validate(contact)"/>
+        <span ng-show="isValid.checked" class="glyphicon form-control-feedback" ng-class="{'glyphicon-ok': isValid.email, 'glyphicon-remove': !isValid.email, 'glyphicon-send': contactSent}" aria-hidden="true"></span>
+      </div>
+      <div class="form-group" ng-class="{'has-success': contactSent}">
+        <textarea ng-disabled="contactSent" class="form-control" ng-model="contact.message" placeholder="How may we help?"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn" ng-class="{'btn-success': contactSent, 'btn-primary': isValid.email}" ng-click="send(contact)" ng-disabled="!isValid.form || contactSent">{{(contactSent) ? 'Sent' : 'Send'}}</button>
       </div>
     </div>
   </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.28/angular.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
+<script>
+function ContactCtrl($scope){
+  $scope.contact = { // starting contact values
+    email: "",
+    message: ""
+  };
+  $scope.isValid = {
+    email: true,
+    form: false,
+    checked: false // form has been checked
+  };
+  $scope.contactSent = false;
+
+  function isValidEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  };
+
+
+  $scope.validate = function validate(contact) {
+    $scope.isValid.checked = true;
+    $scope.isValid.email = isValidEmail(contact.email);
+    $scope.isValid.form = $scope.isValid.email; // all of the conditions to be met for the form to be valid
+    return $scope.isValid.form;
+  };
+
+  $scope.send = function(contact) { // send the message
+    if (isValidEmail(contact.email)) {
+      var firebaseRef = new Firebase("https://emaillawnco.firebaseio.com/"); // your firebase location here
+      firebaseRef.push($scope.contact);
+      $scope.contactSent = true;
+    };
+  };
+
+};
+</script>
 
   <footer>
     <div class="inner-footer">
