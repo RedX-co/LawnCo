@@ -25,16 +25,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body ng-controller="LawnCtrl">
+  <body>
     <header>
       <nav div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
           <ul class="social-network">
-            <li><a href="https://www.facebook.com/pages/Lawn-Co/484272274971964" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+            <li><!--a href="https://www.facebook.com/pages/Lawn-Co/484272274971964" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a--></li>
           </ul>
-          <ul ng-repeat="info in infos" class="info">
-            <li><p><i class="fa fa-phone"></i>{{info.phone}}</p></li>
-            <li><a href="mailto:{{info.email}}"><i class="fa fa-envelope"></i>{{info.email}}</a></li>
+          <ul class="info" style="position:relative; left: -165px">
+            <li><p><i class="fa fa-phone"></i><a  data-placement="top" href="tel:2083230234">(208) 323-0234</a></p></li>
+            <li><a href="mailto:info@lawnco.net"><i class="fa fa-envelope"></i>info@lawnco.net</a></li>
           </ul>
         </div>
       </nav>
@@ -152,18 +152,15 @@
             <h3 class="widgetheading"></h3>
 
           </div>
-          <div ng-repeat="info in infos" class="col-md-4 f-contact">
+          <div class="col-md-4 f-contact">
             <h3 class="widgetheading">Contact Us</h3>
-            <a href=""mailto:{{info.email}}""><p><i class="fa fa-envelope"></i>{{info.email}}</p></a>
-            <p><i class="fa fa-phone"></i>{{info.phone}}</p>
-            <p><i class="fa fa-home"></i>2581 Wildwood
-              Boise, <br>
-              ID 83713
-            </p>
+            <a href="mailto:info@lawnco.net"><p><i class="fa fa-envelope"></i>info@lawnco.net</p></a>
+            <p><i class="fa fa-phone"></i><a href="tel:2083230234" style="color:#8a8d94">(208) 323-0234</p>
+              <p><i class="fa fa-home"></i>2581 Wildwood, Boise, ID 83713</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
 
