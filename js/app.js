@@ -7,5 +7,5 @@ app.controller("LawnCtrl", function($scope, $firebase) {
   var syncObject = sync.$asObject();
   // synchronize the object with a three-way data binding
   // click on `index.html` above to see it used in the DOM!
-  syncObject.$bindTo($scope, "infos");
+  syncObject.$bindTo($scope, "site");
 });
