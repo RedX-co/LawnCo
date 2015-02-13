@@ -71,8 +71,9 @@
   <br>
 
 
-  <div ng-app="" class="container-fluid">
+  <div ng-app="" class="container">
     <div ng-controller="ContactCtrl">
+     <div class="row">
       <h1>Contact Us</h1>
       <div class="form-group has-feedback" ng-class="{'has-success': isValid.email && isValid.checked, 'has-error': !isValid.email}">
         <input ng-disabled="contactSent" class="form-control" ng-model="contact.email" placeholder="Email" ng-keydown="validate(contact)"/>
@@ -85,6 +86,7 @@
         <button class="ng-hide btn" ng-show="isValid" ng-class="{'btn-success': contactSent, 'btn-primary': isValid.email}" ng-click="send(contact)" ng-disabled="!isValid.form || contactSent">{{ sendStatus() }}</button>
       </div>
       </div>
+    </div>
     </div>
   </div>
 
