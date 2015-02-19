@@ -1,11 +1,6 @@
-//var app = angular.module("lawnApp", ["firebase"]);
-
-//app.controller("LawnCtrl", function($scope, $firebase) {
-//  var ref = new Firebase("https://lawncoemail.firebaseio.com/");
-//  var sync = $firebase(ref);
-  // download the data into a local object
-//  var syncObject = sync.$asObject();
-  // synchronize the object with a three-way data binding
-  // click on `index.html` above to see it used in the DOM!
-//  syncObject.$bindTo($scope, "site");
-//});
+var container = document.querySelector('#container');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 200,
+  itemSelector: '.item'
+});

@@ -6,6 +6,9 @@
 @import url('overwrite.css');
 @import url('animate.css');
 
+.item { width: 25%; }
+.item.w2 { width: 50%; }
+
 .header {
 	color: #36A0FF;
 	font-size: 27px;
