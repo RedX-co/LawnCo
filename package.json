@@ -4,7 +4,11 @@
   "homepage": "lawnco.net",
   "author": "Jared Heikes <redx.co>",
   "dependencies": {
-    "firebase": "^2.1.2"
-  },
-  "version": "0.40.5"
+    "firebase": "^2.1.2",
+    "harp": "*"
+},
+"engines": {
+  "node": "0.10.x",
+  "npm": "1.2.x"
+}
 }
