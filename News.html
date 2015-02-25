@@ -75,16 +75,21 @@
   <div class="blog">
     <div class="container">
       <div class="row">
-        <div ng-repeat="news in new" class="col-xs-12 col-sm-6 col-md-8">
-          <div class="page-header">
+        <div ng-repeat="news in new" class="col-md-8">
             <h3>{{news.title}}</h3>
             <h5>{{news.date}}</h5>
             <p>
               {{news.item}}
             </p>
             </div>
+            <div class="col-md-4">
+              <img style="float: right" src="img/home/lawnco.gif" class="img-responsive center-block"/>
+            </div>
 
-          </div>
+
+
+
+
         </div>
       </div>
     </div>
