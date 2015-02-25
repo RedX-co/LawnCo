@@ -5,7 +5,7 @@
   "author": "Jared Heikes <redx.co>",
   "dependencies": {
     "firebase": "^2.1.2",
-    "harp": "*"
+    "harp": "0.14.0"
 },
 "engines": {
   "node": "0.10.x",
