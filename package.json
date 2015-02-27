@@ -1,0 +1,12 @@
+{
+  "name": "Lawnco",
+  "version": "1.0.0",
+  "description": "Lawn co website",
+  "dependencies": {
+    "harp": "*"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "2.1.x"
+  }
+}
